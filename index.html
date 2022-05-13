@@ -51,22 +51,23 @@
           />
         </div>
 
-        <!-- Alertas -->
-        <div class="oculto" id="resultadoCalculo">
+        <!-- Resultado -->
+        <div id="resultadoCalculo">
           Taxa de serviço opcional da mesa
           <u id="mesaSelecionada">01</u>:
-
+          <br><br>
           <p>
-            Total de:
-            <strong
-              ><a>R$<span id="totalTaxaServico"> 0,00 </span></a></strong
-            >
+            Total de: <a>R$<span id="totalDaMesa"> 0,00 </span></a>
+            <br>
+            <strong>Taxa de Serviço:
+              <a>R$<span id="totalTaxaServCalc"> 0,00 </span></a>
+            </strong>
           </p>
         </div>
 
         <!-- Botões -->
-        <div class="oculto" id="btn-acao">
-          <a class="button" href="#">Calcular</a>
+        <div>
+          <a class="button" id="btn-acao" href="#">Calcular</a>
           <button class="button button-outline">Limpar</button>
         </div>
       </div>

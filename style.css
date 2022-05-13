@@ -16,7 +16,7 @@ section {
   display: none;
 }
 .visivel {
-  display: unset;
+  display: block;
 }
 #resultadoCalculo {
   margin-top: 25px;

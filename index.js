@@ -8,27 +8,29 @@ nroMesa.addEventListener('change', exibeNroDaMesa);
 const valorTotal = document.getElementById('valorTotal');
 valorTotal.addEventListener('change', exibeValorTotal);
 
-const btnCalcular = document.getElementById('resultadoCalculo');
+const btnCalcular = document.getElementById('btn-acao');
 btnCalcular.addEventListener('click', exibeFormCalculo);
+
+const divOculto = document.getElementById('resultadoCalculo');
+divOculto.className = 'oculto';
+
 
 // Função Seleciona Número da Mesa
 function exibeNroDaMesa() {
   console.log(`Mesa selecionada: ${nroMesa.value}.`);
   let nroMesaSelecionada = nroMesa.value;
-  nroMesaSelecionada = document.getElementById('mesaSelecionada').innerHTML =
-    nroMesaSelecionada;
+  document.getElementById('mesaSelecionada').innerHTML = nroMesaSelecionada;
 }
 
 // Função Calcular Taxa de Serviço
 function exibeValorTotal() {
   console.log(`Conta da Mesa é de: R$ ${valorTotal.value}.`);
-  let totalCalculado = valorTotal.value;
-  totalCalculado = document.getElementById('totalTaxaServico').innerHTML =
-    totalCalculado;
-  exibeFormCalculo();
+  let totalCalculado = (valorTotal.value);
+  document.getElementById('totalDaMesa').innerHTML = totalCalculado;
+  document.getElementById('totalTaxaServCalc').innerHTML = (totalCalculado * 0.10);
 }
 
 // Função Exibir Calculo
 function exibeFormCalculo() {
-  document.getElementById('totalTaxaServico').className = visivel;
+  divOculto.className = 'visivel';
 }
