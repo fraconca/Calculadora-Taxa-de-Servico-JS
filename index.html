@@ -26,11 +26,9 @@
     <section id="calculadora-taxa-servico">
       <div>
         <h1>Taxa de Serviço</h1>
-
+        <br />
         <!-- Input -->
         <div>
-          <p>Informe o valor total da conta.</p>
-
           <label for="nroMesa">Mesa:</label>
           <select id="nroMesa">
             <option value="01">01</option>
@@ -54,18 +52,20 @@
         </div>
 
         <!-- Alertas -->
-        <div class="ocultoX" id="resultadoCalculo">
+        <div class="oculto" id="resultadoCalculo">
           Taxa de serviço opcional da mesa
           <u id="mesaSelecionada">01</u>:
 
           <p>
             Total de:
-            <strong><a>R$<span> 0,00 </span></a></strong>
+            <strong
+              ><a>R$<span id="totalTaxaServico"> 0,00 </span></a></strong
+            >
           </p>
         </div>
 
         <!-- Botões -->
-        <div id="btn-acao">
+        <div class="oculto" id="btn-acao">
           <a class="button" href="#">Calcular</a>
           <button class="button button-outline">Limpar</button>
         </div>
