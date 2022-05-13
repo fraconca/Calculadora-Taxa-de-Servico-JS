@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <!-- You should properly set the path from the main file. -->
+    <title>White Belt JS #01 - Calculadora de Taxa de Serviços</title>
+  </head>
+  <body>
+    <section id="calculadora-taxa-servico">
+      <div>
+        <h1>Taxa de Serviço</h1>
+
+        <!-- Input -->
+        <div>
+          <p>Informe o valor total da conta.</p>
+
+          <label for="nroMesa">Mesa:</label>
+          <select id="nroMesa">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+          </select>
+
+          <label for="valorTotal">Valor Total em R$:</label>
+          <small class="oculto">Aviso de erro!</small>
+          <input
+            id="valorTotal"
+            type="number"
+            name="total"
+            placeholder="R$ 100,00"
+            min="10"
+            max="10000"
+            step="5"
+            pattern="[0-9]"
+          />
+        </div>
+
+        <!-- Alertas -->
+        <div class="ocultoX" id="resultadoCalculo">
+          Taxa de serviço opcional da mesa
+          <u id="mesaSelecionada">01</u>:
+
+          <p>
+            Total de:
+            <strong><a>R$<span> 0,00 </span></a></strong>
+          </p>
+        </div>
+
+        <!-- Botões -->
+        <div id="btn-acao">
+          <a class="button" href="#">Calcular</a>
+          <button class="button button-outline">Limpar</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

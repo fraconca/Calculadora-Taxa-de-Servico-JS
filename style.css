@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(219, 206, 228);
+}
+section {
+  max-width: 600px;
+  margin: auto;
+  padding: 50px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 5px rgba(150, 150, 150, 0.25);
+}
+#calculadora-taxa-servico {
+  margin-top: 50px;
+}
+.oculto {
+  display: none;
+}
+.visivel {
+  display: unset;
+}
+#resultadoCalculo {
+  margin-top: 25px;
+}
+#btn-acao {
+  margin-top: 50px;
+}
