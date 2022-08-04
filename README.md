@@ -1,3 +1,3 @@
-# js-jgook4
+# Calculadora de Taxa de Serviço (Javascript Vanilla)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-jgook4)
+[Feito no StackBlitz ⚡️](https://stackblitz.com/edit/js-jgook4)
